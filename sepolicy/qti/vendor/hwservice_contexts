@@ -3,10 +3,15 @@ vendor.oplus.hardware.bluetooth_audio_extend::IBluetoothAudioProvidersFactory   
 
 # Camera
 vendor.oplus.hardware.cameraextension::ICameraExtensionService         u:object_r:vendor_hal_camera_extension_hwservice:s0
+vendor.oplus.hardware.cameraextension.ICameraExtensionService/default  u:object_r:oem_service:s0
 vendor.oplus.hardware.cameraMDM::IOPlusCameraMDM                       u:object_r:vendor_hal_cameraMDM_hwservice:s0
 vendor.oplus.hardware.cammidasservice::IMIDASService                   u:object_r:hal_camera_hwservice:s0
+vendor.oplus.hardware.cammidasservice.IMIDASService/default            u:object_r:oem_service:s0
 vendor.oplus.hardware.sendextcamcmd::ISendExtCamCmdService             u:object_r:hal_camera_hwservice:s0
 vendor.qti.hardware.camera.cameraextension::ICameraExtensionService    u:object_r:vendor_hal_camera_extension_hwservice:s0
+
+# CommonDcs service
+vendor.oplus.hardware.commondcs.ICommonDcsAidlHalService/default              u:object_r:oem_service:s0
 
 # Display
 vendor.display.PanelChaplin::IPanelChaplin          u:object_r:hal_graphics_composer_hwservice:s0
@@ -27,6 +32,9 @@ vendor.nxpnq330.nxpese::INxpEse                   u:object_r:hal_nfc_hwservice:s
 
 # ORMS
 vendor.oplus.hardware.orms::IOrmsHalProxy    u:object_r:vendor_hal_orms_hwservice:s0
+
+# Performance
+vendor.oplus.hardware.performance::IPerformance    u:object_r:vendor_hal_performance_hwservice:s0
 
 # Sensors
 vendor.oplus.hardware.oplusSensor::ISensorFeature    u:object_r:vendor_hal_oplusSensor_hwservice:s0
